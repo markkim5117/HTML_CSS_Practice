@@ -1,7 +1,4 @@
-@font-face {
-  font-family: 'AppleSDGothicNeoM';
-  src: url('fonts/AppleSDGothicNeoM.ttf');
-}
+<link rel="stylesheet" href="fonts/fontstylesheet.css">
 body {
   margin: 0;
 }
