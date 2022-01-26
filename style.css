@@ -1,10 +1,9 @@
-@import 'fonts/fontstylesheet.css';
 body {
   margin: 0;
 }
 a {
   text-decoration: none;
-  font-family: 'AppleSDGothicNeoM';
+  font-family: 'AppleSDGothicNeoM00';
 }
 h1 {
   font-size: 45px;
@@ -12,13 +11,13 @@ h1 {
   border-bottom: 1px solid gray;
   margin: 0;
   padding: 20px;
-  font-family: 'AppleSDGothicNeoM';
+  font-family: 'AppleSDGothicNeoM00';
 }
 #subtitle {
   text-align: center;
   border-bottom: 1px solid gray;
   padding: 20px;
-  font-family: 'AppleSDGothicNeoM';
+  font-family: 'AppleSDGothicNeoM00';
 }
 #grid {
   display: grid;
@@ -40,13 +39,13 @@ h1 {
   padding-top: 20px;
   padding-bottom: 20px;
   border-left: 1px solid gray;
-  font-family: 'AppleSDGothicNeoM';
+  font-family: 'AppleSDGothicNeoM00';
 }
 #disqus_thread {
-  font-family: 'AppleSDGothicNeoM';
+  font-family: 'AppleSDGothicNeoM00';
 }
 #tawk_thread {
-  font-family: 'AppleSDGothicNeoM';
+  font-family: 'AppleSDGothicNeoM00';
 }
 @media(max-width: 800px) {
   #grid {
@@ -54,14 +53,15 @@ h1 {
   }
   #grid #article {
     border-left: none;
-    font-family: 'AppleSDGothicNeoM';
+    font-family: 'AppleSDGothicNeoM00';
   }
   h1 {
     border-bottom: none;
-    font-family: 'AppleSDGothicNeoM';
+    font-family: 'AppleSDGothicNeoM00';
   }
   #subtitle {
     border-bottom: none;
-    font-family: 'AppleSDGothicNeoM';
+    font-family: 'AppleSDGothicNeoM00';
   }
 }
+@import "fonts/fontstylesheet.css";
