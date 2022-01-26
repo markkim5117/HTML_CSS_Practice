@@ -4,16 +4,47 @@
     <title>index</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <style>
+      a {
+        color: #0066cc;
+      }
+      #dark_light {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    </style>
   </head>
 
   <body>
-    <!-- <h1><a href="index.html" style="color=blue; text-decoration:underline">IARIM</a></h1>  -->
-    <input type="button" value="Dark Mode" onclick="
-      document.querySelector('body').style.backgroundColor='#181818';
-      document.querySelector('body').style.color='#FFFFFF';">
-    <input type="button" value="Light Mode" onclick="
-      document.querySelector('body').style.backgroundColor='#FFFFFF';
-      document.querySelector('body').style.color='#202020';">
+    <script>
+      document.querySelector('body').style.backgroundColor = '#f5f5f7';
+    </script>
+    <input id="dark_light" type="button" value="Dark Mode" onclick="
+      let target = document.querySelector('body');
+      if(this.value === 'Dark Mode'){
+        target.style.backgroundColor='#181818';
+        target.style.color='#FFFFFF';
+        this.value = 'Light Mode';
+        let links = document.querySelectorAll('a');
+        let i = 0;
+        while(i<links.length){
+          links[i].style.color = 'powderblue';
+          i = i+1;
+        }
+      }
+      else{
+        target.style.backgroundColor='#f5f5f7';
+        target.style.color='#000000';
+        this.value = 'Dark Mode';
+        let links = document.querySelectorAll('a');
+        let i = 0;
+        while(i<links.length){
+          links[i].style.color = '#0066cc';
+          i = i+1;
+        }
+      }"
+    >
 
     <h1><a href="index.html">IARIM</a></h1>
 
@@ -30,13 +61,6 @@
           <li><a href="page_3.html">Competitors</a></li>
           <li><a href="page_4.html">Market Research</a></li>
           <li><a href="page_5.html">Vision and Scenario</a></li>
-          <!--
-          <li><a href="page_1.html"><font color="blue">Welcome to IARIM<font></a></li>
-          <li><a href="page_2.html"><font color="blue">Business Model and Strategy – Schola & Dirigo<font></a></li>
-          <li><a href="page_3.html"><font color="blue">Competitors<font></a></li>
-          <li><a href="page_4.html"><font color="blue">Market Research<font></a></li>
-          <li><a href="page_5.html"><font color="blue">Vision and Scenario<font></a></li>
-          -->
         </ol>
       </div>
 
@@ -47,7 +71,7 @@
     </div>
 
     <div>
-      <div id="disqus_thread"></div>
+      <div id="disqus_thread">
       <script>
           (function() { // DON'T EDIT BELOW THIS LINE
           var d = document, s = d.createElement('script');
@@ -57,20 +81,23 @@
           })();
       </script>
       <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
     </div>
 
     <div>
-      <script type="text/javascript">
-      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-      (function(){
-      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-      s1.async=true;
-      s1.src='https://embed.tawk.to/61e5645cb84f7301d32b6ccc/1fpk10387';
-      s1.charset='UTF-8';
-      s1.setAttribute('crossorigin','*');
-      s0.parentNode.insertBefore(s1,s0);
-      })();
-      </script>
+      <div id="tawk_thread">
+        <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/61e5645cb84f7301d32b6ccc/1fpk10387';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+      </div>
     </div>
 
     <div>

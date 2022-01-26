@@ -4,10 +4,44 @@
     <title>index</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <style>
+      a {
+        color: #0066cc;
+      }
+    </style>
   </head>
 
   <body>
-    <!-- <h1><a href="index.html" style="color=blue; text-decoration:underline">IARIM</a></h1>  -->
+
+    <script>
+      document.querySelector('body').style.backgroundColor='#f5f5f7';
+    </script>
+    <input type="button" value="Dark Mode" onclick="
+      let target = document.querySelector('body');
+      if(this.value === 'Dark Mode'){
+        target.style.backgroundColor='#181818';
+        target.style.color='#FFFFFF';
+        this.value = 'Light Mode';
+        let links = document.querySelectorAll('a');
+        let i = 0;
+        while(i<links.length){
+          links[i].style.color = 'powderblue';
+          i = i+1;
+        }
+      }
+      else{
+        target.style.backgroundColor='#f5f5f7';
+        target.style.color='#000000';
+        this.value = 'Dark Mode';
+        let links = document.querySelectorAll('a');
+        let i = 0;
+        while(i<links.length){
+          links[i].style.color = '#0066cc';
+          i = i+1;
+        }
+      }"
+    >
+
     <h1><a href="index.html">IARIM</a></h1>
 
     <div id= "subtitle">

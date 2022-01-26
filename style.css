@@ -1,9 +1,13 @@
+@font-face {
+  font-family: 'AppleSDGothicNeoM';
+  src: url('AppleSDGothicNeoM.ttf');
+}
 body {
   margin: 0;
 }
 a {
-  color:"black";
   text-decoration: none;
+  font-family: 'AppleSDGothicNeoM';
 }
 h1 {
   font-size: 45px;
@@ -11,11 +15,13 @@ h1 {
   border-bottom: 1px solid gray;
   margin: 0;
   padding: 20px;
+  font-family: 'AppleSDGothicNeoM';
 }
 #subtitle {
   text-align: center;
   border-bottom: 1px solid gray;
   padding: 20px;
+  font-family: 'AppleSDGothicNeoM';
 }
 #grid {
   display: grid;
@@ -28,6 +34,7 @@ h1 {
   margin-top: 0;
   margin-bottom: 0;
   padding: 20px;
+  font-family: 'AppleSDGothicNeoM';
 }
 #grid #article {
   margin-left: 20px;
@@ -36,6 +43,13 @@ h1 {
   padding-top: 20px;
   padding-bottom: 20px;
   border-left: 1px solid gray;
+  font-family: 'AppleSDGothicNeoM';
+}
+#disqus_thread {
+  font-family: 'AppleSDGothicNeoM';
+}
+#tawk_thread {
+  font-family: 'AppleSDGothicNeoM';
 }
 @media(max-width: 800px) {
   #grid {
@@ -43,11 +57,14 @@ h1 {
   }
   #grid #article {
     border-left: none;
+    font-family: 'AppleSDGothicNeoM';
   }
   h1 {
     border-bottom: none;
+    font-family: 'AppleSDGothicNeoM';
   }
   #subtitle {
     border-bottom: none;
+    font-family: 'AppleSDGothicNeoM';
   }
 }
